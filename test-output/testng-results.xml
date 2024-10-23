@@ -2,53 +2,53 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-22T11:26:14 IST" name="Suite" finished-at="2024-10-22T11:26:28 IST" duration-ms="14026">
+  <suite started-at="2024-10-23T11:04:20 IST" name="Suite" finished-at="2024-10-23T11:04:39 IST" duration-ms="19509">
     <groups>
     </groups>
-    <test started-at="2024-10-22T11:26:14 IST" name="Test3" finished-at="2024-10-22T11:26:27 IST" duration-ms="12640">
+    <test started-at="2024-10-23T11:04:20 IST" name="Test3" finished-at="2024-10-23T11:04:38 IST" duration-ms="18031">
       <class name="assignment2.Browsertest">
-        <test-method signature="Crossbrowser(java.lang.String)[pri:0, instance:assignment2.Browsertest@10aa41f2]" started-at="2024-10-22T11:26:14 IST" name="Crossbrowser" finished-at="2024-10-22T11:26:27 IST" duration-ms="12596" status="PASS">
+        <test-method signature="browser(java.lang.String)[pri:0, instance:assignment2.Browsertest@ba2f4ec]" started-at="2024-10-23T11:04:20 IST" name="browser" finished-at="2024-10-23T11:04:38 IST" duration-ms="17991" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Edge]]>
+                <![CDATA[MicrosoftEdge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Crossbrowser -->
+        </test-method> <!-- browser -->
       </class> <!-- assignment2.Browsertest -->
     </test> <!-- Test3 -->
-    <test started-at="2024-10-22T11:26:14 IST" name="Test2" finished-at="2024-10-22T11:26:27 IST" duration-ms="12920">
+    <test started-at="2024-10-23T11:04:20 IST" name="Test1" finished-at="2024-10-23T11:04:38 IST" duration-ms="18403">
       <class name="assignment2.Browsertest">
-        <test-method signature="Crossbrowser(java.lang.String)[pri:0, instance:assignment2.Browsertest@6aaceffd]" started-at="2024-10-22T11:26:14 IST" name="Crossbrowser" finished-at="2024-10-22T11:26:27 IST" duration-ms="12879" status="PASS">
+        <test-method signature="browser(java.lang.String)[pri:0, instance:assignment2.Browsertest@65fb9ffc]" started-at="2024-10-23T11:04:20 IST" name="browser" finished-at="2024-10-23T11:04:38 IST" duration-ms="18367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Crossbrowser -->
-      </class> <!-- assignment2.Browsertest -->
-    </test> <!-- Test2 -->
-    <test started-at="2024-10-22T11:26:14 IST" name="Test1" finished-at="2024-10-22T11:26:28 IST" duration-ms="14026">
-      <class name="assignment2.Browsertest">
-        <test-method signature="Crossbrowser(java.lang.String)[pri:0, instance:assignment2.Browsertest@79079097]" started-at="2024-10-22T11:26:14 IST" name="Crossbrowser" finished-at="2024-10-22T11:26:28 IST" duration-ms="13986" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Crossbrowser -->
+        </test-method> <!-- browser -->
       </class> <!-- assignment2.Browsertest -->
     </test> <!-- Test1 -->
+    <test started-at="2024-10-23T11:04:20 IST" name="Test2" finished-at="2024-10-23T11:04:39 IST" duration-ms="19509">
+      <class name="assignment2.Browsertest">
+        <test-method signature="browser(java.lang.String)[pri:0, instance:assignment2.Browsertest@367ffa75]" started-at="2024-10-23T11:04:20 IST" name="browser" finished-at="2024-10-23T11:04:39 IST" duration-ms="19474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+      </class> <!-- assignment2.Browsertest -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

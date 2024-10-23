@@ -1,43 +1,46 @@
 package assignment2;
-
 import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 public class Browsertest {
 	WebDriver driver;
-	@Test
 	@Parameters("browser")
-	
-public void Crossbrowser(String browser) throws MalformedURLException,InterruptedException
+	@Test
+public void browser(String browser) throws MalformedURLException, InterruptedException, URISyntaxException
 {
-if (browser.equalsIgnoreCase("Chrome") )
+if (browser.equalsIgnoreCase("chrome"))
   {
-     ChromeOptions options=new ChromeOptions();
-     driver=new RemoteWebDriver(new URL("http://localhost:4444"),options) ;
+     DesiredCapabilities dc =new DesiredCapabilities();
+     dc.setPlatform(Platform.LINUX); dc.setBrowserName("chrome");
+     driver = new RemoteWebDriver((new URI("http://localhost:4444")).toURL(), dc);
      System.out.println("Connected with Chrome Browser");
   }
-if (browser.equalsIgnoreCase("Firefox") )
+ if (browser.equalsIgnoreCase("firefox"))
   {
-     FirefoxOptions options=new FirefoxOptions();
-     driver=new RemoteWebDriver(new URL("http://localhost:4444"),options) ;
+	 DesiredCapabilities dc =new DesiredCapabilities();
+	 dc.setPlatform(Platform.LINUX); dc.setBrowserName("firefox");
+     driver = new RemoteWebDriver((new URI("http://localhost:4444")).toURL(), dc);
      System.out.println("Connected  with Firefox Browser");
   }
-if (browser.equalsIgnoreCase("Edge") )
+ if (browser.equalsIgnoreCase("MicrosoftEdge"))
   {
-     EdgeOptions options=new EdgeOptions();
-     driver=new RemoteWebDriver(new URL("http://localhost:4444"),options) ;
+	 DesiredCapabilities dc =new DesiredCapabilities();
+	 dc.setPlatform(Platform.LINUX); dc.setBrowserName("MicrosoftEdge");
+     driver = new RemoteWebDriver((new URI("http://localhost:4444")).toURL(), dc);
      System.out.println("Connected with Edge Browser");
    }
-     Thread.sleep(5000);
+     System.out.println("Remote driver is connected successfully");
      driver.get ("https://www.amazon.in");
-     Thread.sleep(3000);
-     System.out.println("Application opened!");
+     System.out.println("Application opened successfully");
+     Thread.sleep(15000);
+     System.out.println(driver.getTitle());
      driver.quit();
   }
   }

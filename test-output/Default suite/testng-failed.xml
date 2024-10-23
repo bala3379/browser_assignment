@@ -5,7 +5,7 @@
     <classes>
       <class name="assignment2.Browsertest">
         <methods>
-          <include name="Crossbrowser"/>
+          <include name="browser"/>
         </methods>
       </class> <!-- assignment2.Browsertest -->
     </classes>
